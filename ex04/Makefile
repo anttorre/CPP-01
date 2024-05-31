@@ -12,14 +12,11 @@ RESET	:= \033[0m
 CC = clang++
 CFLAGS = -g -fsanitize=address,undefined -Wall -Werror -Wextra 
 
-NAME = Human
+NAME = Replace
 
 STD = -std=c++98
 
-SRCS =  main.cpp \
-		HumanA.cpp \
-		HumanB.cpp \
-		Weapon.cpp
+SRCS =  main.cpp
 
 OBJS = $(SRCS:.cpp=.o)
 

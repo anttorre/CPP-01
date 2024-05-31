@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   Weapon.hpp                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: anttorre <anttorre@student.42.fr>          +#+  +:+       +#+        */
+/*   By: anttorre <anttorre@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/29 16:33:12 by anttorre          #+#    #+#             */
-/*   Updated: 2024/05/29 17:41:31 by anttorre         ###   ########.fr       */
+/*   Updated: 2024/05/31 14:26:01 by anttorre         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ class Weapon
 		std::string	type;
 
 	public:
-		Weapon();
+		Weapon(std::string type);
 		~Weapon();
 		
 		/*Getters*/
