@@ -6,7 +6,7 @@
 /*   By: anttorre <anttorre@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/04 12:49:43 by anttorre          #+#    #+#             */
-/*   Updated: 2024/06/04 12:57:45 by anttorre         ###   ########.fr       */
+/*   Updated: 2024/06/04 15:12:07 by anttorre         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,12 @@
 
 int main(int argc, const char **argv)
 {
-	
-	return 0;
+	if (argc > 2) 
+	{
+		std::cout << "Wrong number of arguments.\n";
+		return (1);
+	}
+	Harl harl;
+	harl.complain(argv[1]);
+	return (0);
 }
