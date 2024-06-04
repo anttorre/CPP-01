@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   main.cpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: anttorre <anttorre@student.42malaga.com    +#+  +:+       +#+        */
+/*   By: anttorre <anttorre@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/31 14:59:26 by anttorre          #+#    #+#             */
-/*   Updated: 2024/05/31 17:42:03 by anttorre         ###   ########.fr       */
+/*   Updated: 2024/06/04 12:51:39 by anttorre         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@ int	main(int argc, char **argv)
 	std::string		ar3;
 	if (argc != 4)
 	{
-		std::cout << "Wrong arguments.\n Usage: <filename> <old_word> <new_word>" << std::endl;
+		std::cout << "Wrong arguments.\nUsage: <filename> <old_word> <new_word>" << std::endl;
 		return (1);
 	}
 	if (argv[2])
