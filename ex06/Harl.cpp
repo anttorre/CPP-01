@@ -6,7 +6,7 @@
 /*   By: anttorre <anttorre@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/04 12:07:36 by anttorre          #+#    #+#             */
-/*   Updated: 2024/06/04 15:14:42 by anttorre         ###   ########.fr       */
+/*   Updated: 2024/06/04 18:13:44 by anttorre         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,24 +40,30 @@ void	Harl::error()
 
 void	Harl::complain(std::string level)
 {
-	switch (toupper(level[0]))
+	std::string	filter[] = {"DEBUG", "INFO", "WARNING", "ERROR"};
+	std::string	filter2[] = {"debug", "info", "warning", "error"};
+	int	i;
+	for (i = 0; i < 4; i++)
+		if (level == filter[i] || level == filter2[i])
+			break;
+	switch (i)
 	{
-		case 'D':
+		case 0 :
 			this->debug();
 			this->info();
 			this->warning();
 			this->error();
 			break;
-		case 'I':
+		case 1:
 			this->info();
 			this->warning();
 			this->error();
 			break;
-		case 'W':
+		case 2:
 			this->warning();
 			this->error();
 			break;
-		case 'E':
+		case 3:
 			this->error();
 			break;	
 		default:

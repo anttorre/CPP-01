@@ -6,7 +6,7 @@
 /*   By: anttorre <anttorre@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/31 14:59:26 by anttorre          #+#    #+#             */
-/*   Updated: 2024/06/04 12:51:39 by anttorre         ###   ########.fr       */
+/*   Updated: 2024/06/04 18:04:41 by anttorre         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,7 +40,9 @@ int	main(int argc, char **argv)
 		std::cout << "Error opening INPUT file." << std::endl;
 		return (1);
 	}
-	std::ofstream	outfile("output.txt");
+	std::string		filename = argv[1];
+	filename += ".replace";
+	std::ofstream	outfile(filename.c_str());
 	if (!outfile.is_open())
 	{
 		std::cout << "Error opening OUTPUT file." << std::endl;
